@@ -107,6 +107,7 @@ dependencies = ["release-exists"]
 command = "which"
 args = ["gh"]
 
+
 [tasks.upload-release-assets]
 command = "./hack/ci/upload-release-assets.sh"
 dependencies = ["check-gh-installed", "assets-exist"]
