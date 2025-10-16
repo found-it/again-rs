@@ -12,11 +12,11 @@ retry() {
   "${@}"
 }
 
-if [ -z "${HELLO_TAG_NAME}" ]; then
-  echo "HELLO_TAG_NAME env is missing"
+if [ -z "${AGAIN_TAG_NAME}" ]; then
+  echo "AGAIN_TAG_NAME env is missing"
   exit 1
 fi
 
 cd target/assets
 
-retry gh release upload "${HELLO_TAG_NAME}" --clobber ./*
+retry gh release upload "${AGAIN_TAG_NAME}" --clobber ./*
